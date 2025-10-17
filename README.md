@@ -1,6 +1,6 @@
 # HGNet: A Hypergraph for Classification Head to Capture Multi-scale Spatial Dependencies
 
-The HGNet (tiny) model we have released is a classification head model with a standard graph structure (each edge connects two nodes), utilizing a graph alternating update strategy and Dependency-Aware Fusion (DAF) for the classification head design. Compared to HGNet (base), HGNet (tiny) has fewer parameters but lacks multi-scale hypergraph, sparse graph updates, and the orthogonal fusion module. After the publication of this paper, we will release the complete HGNet classification head model along with more detailed usage instructions.
+The HGNet (tiny) model we have released is a classification network with a graph structure (each edge connects two nodes), utilizing a graph alternating update strategy and Dependency-Aware Fusion (DAF) for the classification network design. Compared to HGNet (base), HGNet (tiny) has fewer parameters but lacks multi-scale hypergraph, sparse graph updates, and the orthogonal fusion module. After the publication of this paper, we will release the complete HGNet classification network along with more detailed usage instructions.
 
 ## Overall Structure of HGNet
 ![Collection](images/HGNet.png)
@@ -11,4 +11,4 @@ In mainstream models, the traditional classification head typically uses a pooli
 ## Visualization
 ![Collection](images/Visualization.png)
 
-We input the image features extracted by the backbone into both the standard classification (Baseline) head and HGNet, and visualize the attention regions of the output features (Class Activation Mapping, CAM).
+We visualize the image features of the final layer of ResNet101 and HGNet using Class Activation Mapping (CAM), and visualize the regions of focus in these output features.
